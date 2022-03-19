@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | OtaTech</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #048DDD, #0677B8);
+        }
+        .box {
+            color: white;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+
+        }
+        fieldset{
+            border: 3px solid rgb(40, 143, 247);
+        }
+        legend{
+            border: 1px solid  rgb(40, 143, 247);
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(40, 143, 247);;
+            border-radius: 10px;
+        }
+        .inputbox {
+            position: relative;
+        } 
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+            }
+            .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+            }
+    </style>     
+</head> 
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário de Clientes</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser">
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div> <br><br>
+                <div class="inputBox">
+                    <input type="number" name="cpfrg" id="cpfrg" class="inputUser">
+                    <label for="CPF" class="labelInput">CPF ou RG</label>
+                </div><br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser">
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div><br><br>
+                <p>Modelo:</p>
+                <input type="radio" id="celular" name="modelo" value="celular" required>
+                <label for="celular">Celular</label><br>
+                <input type="radio" id="controle"name="modelo" value="controle" required>
+                <label for="controle">Controle</label><br>
+                <input type="radio" id="videogame" name="modelo" value="videogame" required>
+                <label for="videogame">Video-Game</label><br><br>
+                <div class="inputBox">
+                    <input type="text" name="defeito" id="defeito" class="inputUser">
+                    <label for="defeito" class="labelInput">Defeito</label>
+                </div><br><br>
+                <div class="inputBox">
+                    <input type="text" name="obs" id="obs" class="inputUser">
+                    <label for="obs" class="labelInput">Obervações</label>
+                </div><br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+
+    
+</body>
+</html>

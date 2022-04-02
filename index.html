@@ -68,6 +68,7 @@
             font-size: 15px;
             cursor: pointer;
             border-radius: 10px;
+            position:relative;
         }
     </style>     
 </head> 
@@ -75,7 +76,7 @@
     <div class="box">
         <form action="">
             <fieldset>
-                <legend><b>Formulário de Clientes</b></legend>
+                <legend><b>Orçamento de clientes</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser">
@@ -84,16 +85,11 @@
                 <div class="inputBox">
                     <input type="tel" name="telefone" id="telefone" class="inputUser">
                     <label for="telefone" class="labelInput">Telefone:</label>
-                </div><br>
-                <div class="optionInput">
-                <p>Modelo:</p>
-                <input type="radio" id="celular" name="modelo" value="celular" required>
-                <label for="celular">Celular</label><br>
-                <input type="radio" id="controle"name="modelo" value="controle" required>
-                <label for="controle">Controle</label><br>
-                <input type="radio" id="videogame" name="modelo" value="videogame" required>
-                <label for="videogame">Video-Game</label>
-                </div><br><br><br> 
+                </div><br><br>
+                <div class="inputBox">
+                    <input type="text" name="modelo" id="modelo" class="inputUser">
+                    <label for="modelo" class="labelInput">Modelo:</label>
+                </div><br><br>
                 <div class="inputBox">
                     <input type="text" name="defeito" id="defeito" class="inputUser">
                     <label for="defeito" class="labelInput">Defeito:</label>
